@@ -127,7 +127,8 @@
     "tslib": "^2.3.0",
     "tweetnacl": "^1.0.3",
     "tweetnacl-util": "^0.15.1",
-    "uint8arrays": "^4.0.3"
+    "uint8arrays": "^4.0.3",
+    "viem": "^1.16.3"
   },
   "devDependencies": {
     "@nrwl/cypress": "14.5.10",
