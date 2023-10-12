@@ -12,7 +12,7 @@ import {
   writeFile,
   readFile,
 } from './utils.mjs';
-import { readCachedProjectGraph } from '@nrwl/devkit';
+import { readCachedProjectGraph } from '@nx/devkit';
 import { exit } from 'process';
 import fs from 'fs';
 
@@ -54,7 +54,7 @@ if (
 
 greenLog(`Creating ${PROJECT_NAME} library...`);
 try {
-  await runCommand(`yarn nx generate @nrwl/js:library --name=${PROJECT_NAME}`);
+  await runCommand(`yarn nx generate @nx/js:library --name=${PROJECT_NAME}`);
 } catch (e) {
   greenLog(`${PROJECT_NAME} already exists.`);
   alreadyExists = true;

@@ -1,4 +1,4 @@
-import { readCachedProjectGraph } from '@nrwl/devkit';
+import { readCachedProjectGraph } from '@nx/devkit';
 import { readFileSync, writeFileSync } from 'fs';
 import chalk from 'chalk';
 

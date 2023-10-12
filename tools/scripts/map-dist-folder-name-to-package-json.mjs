@@ -1,4 +1,4 @@
-import { readCachedProjectGraph } from '@nrwl/devkit';
+import { readCachedProjectGraph } from '@nx/devkit';
 import chalk from 'chalk';
 import { exit } from 'process';
 import {
