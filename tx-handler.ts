@@ -26,7 +26,7 @@ const handleTx = async (
   });
 };
 
-export const processTx = async (description: string, callback: any) => {
+export const processTx = async (description: string | undefined, callback: any) => {
   if (!(await checkEndpoint())) {
     throw new Error('Endpoint is not running');
   }
