@@ -54,11 +54,11 @@ export const mostCommonString = (arr: Array<any>): any => {
 
 export const throwError = (e: NodeClientErrorV0 | NodeClientErrorV1): never => {
   if (isNodeClientErrorV1(e)) {
-    return throwErrorV1(e);
+    throw throwErrorV1(e);
   } else if (isNodeClientErrorV0(e)) {
-    return throwErrorV0(e);
+    throw throwErrorV0(e);
   }
-  return throwGenericError(e as any);
+  throw throwGenericError(e as any);
 };
 
 /**
