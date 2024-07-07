@@ -25,8 +25,48 @@ export const testPkpEthersWithEoaSessionSigsToSignMessage = async (
 
   // -- test signMessage
   try {
-    const signature = await pkpEthersWallet.signMessage(alice.loveLetter);
+    // test 10 times speed
+    console.time('signMessage0');
+    const signature = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage0');
+    console.time('signMessage1');
+    const signature1 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage1');
+    console.time('signMessage2');
+    const signature2 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage2');
+    console.time('signMessage3');
+    const signature3 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage3');
+    console.time('signMessage4');
+    const signature4 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage4');
+    console.time('signMessage5');
+    const signature5 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage5');
+    console.time('signMessage6');
+    const signature6 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage6');
+    console.time('signMessage7');
+    const signature7 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage7');
+    console.time('signMessage8');
+    const signature8 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage8');
+    console.time('signMessage9');
+    const signature9 = await pkpEthersWallet.signMessage("Hello world");
+    console.timeEnd('signMessage9');
+    
     console.log('✅ signature:', signature);
+    console.log('✅ signature1:', signature1);
+    console.log('✅ signature2:', signature2);
+    console.log('✅ signature3:', signature3);
+    console.log('✅ signature4:', signature4);
+    console.log('✅ signature5:', signature5);
+    console.log('✅ signature6:', signature6);
+    console.log('✅ signature7:', signature7);
+    console.log('✅ signature8:', signature8);
+    console.log('✅ signature9:', signature9);
   } catch (e) {
     throw new Error('❌ Error: ' + e.message);
   }

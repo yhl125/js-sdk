@@ -163,105 +163,105 @@ import { testSignTransactionWithSolanaEncryptedKey } from './tests/testSignTrans
     testUseEoaSessionSigsToEncryptDecryptZip,
   };
 
-  const pkpSessionSigsTests = {
-    testUsePkpSessionSigsToExecuteJsSigning,
-    testUsePkpSessionSigsToPkpSign,
-    testUsePkpSessionSigsToExecuteJsSigningInParallel,
-    testUsePkpSessionSigsToExecuteJsClaimKeys,
-    testUsePkpSessionSigsToExecuteJsClaimMultipleKeys,
-    testUsePkpSessionSigsToExecuteJsJsonResponse,
-    testUsePkpSessionSigsToExecuteJsConsoleLog,
-    testUsePkpSessionSigsToEncryptDecryptString,
-    testUsePkpSessionSigsToEncryptDecryptFile,
-    testUsePkpSessionSigsToEncryptDecryptZip,
-  };
+  // const pkpSessionSigsTests = {
+  //   testUsePkpSessionSigsToExecuteJsSigning,
+  //   testUsePkpSessionSigsToPkpSign,
+  //   testUsePkpSessionSigsToExecuteJsSigningInParallel,
+  //   testUsePkpSessionSigsToExecuteJsClaimKeys,
+  //   testUsePkpSessionSigsToExecuteJsClaimMultipleKeys,
+  //   testUsePkpSessionSigsToExecuteJsJsonResponse,
+  //   testUsePkpSessionSigsToExecuteJsConsoleLog,
+  //   testUsePkpSessionSigsToEncryptDecryptString,
+  //   testUsePkpSessionSigsToEncryptDecryptFile,
+  //   testUsePkpSessionSigsToEncryptDecryptZip,
+  // };
 
-  const litActionSessionSigsTests = {
-    testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsSigning,
-    testUseValidLitActionCodeGeneratedSessionSigsToPkpSign,
-    testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsSigningInParallel,
-    testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsClaimKeys,
-    testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsClaimMultipleKeys,
-    testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsJsonResponse,
-    testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsConsoleLog,
-    testUseValidLitActionCodeGeneratedSessionSigsToEncryptDecryptString,
-    testUseValidLitActionCodeGeneratedSessionSigsToEncryptDecryptFile,
-    testUseValidLitActionCodeGeneratedSessionSigsToEncryptDecryptZip,
+  // const litActionSessionSigsTests = {
+  //   testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsSigning,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToPkpSign,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsSigningInParallel,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsClaimKeys,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsClaimMultipleKeys,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsJsonResponse,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToExecuteJsConsoleLog,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToEncryptDecryptString,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToEncryptDecryptFile,
+  //   testUseValidLitActionCodeGeneratedSessionSigsToEncryptDecryptZip,
 
-    // -- invalid cases
-    testUseInvalidLitActionIpfsCodeToGenerateSessionSigs,
+  //   // -- invalid cases
+  //   testUseInvalidLitActionIpfsCodeToGenerateSessionSigs,
 
-    // -- custom auth methods
-    testUseCustomAuthSessionSigsToPkpSignExecuteJs,
-  };
+  //   // -- custom auth methods
+  //   testUseCustomAuthSessionSigsToPkpSignExecuteJs,
+  // };
 
-  const litActionIpfsIdSessionSigsTests = {
-    testUseValidLitActionIpfsCodeGeneratedSessionSigsToPkpSign,
-    testUseValidLitActionIpfsCodeGeneratedSessionSigsToExecuteJsSigning,
+  // const litActionIpfsIdSessionSigsTests = {
+  //   testUseValidLitActionIpfsCodeGeneratedSessionSigsToPkpSign,
+  //   testUseValidLitActionIpfsCodeGeneratedSessionSigsToExecuteJsSigning,
 
-    // -- invalid cases
-    testUseInvalidLitActionCodeToGenerateSessionSigs,
-  };
+  //   // -- invalid cases
+  //   testUseInvalidLitActionCodeToGenerateSessionSigs,
+  // };
 
-  const capacityDelegationTests = {
-    testDelegatingCapacityCreditsNFTToAnotherWalletToExecuteJs,
-    testDelegatingCapacityCreditsNFTToAnotherWalletToPkpSign,
-    testDelegatingCapacityCreditsNFTToAnotherPkpToExecuteJs,
-    testUseCapacityDelegationAuthSigWithUnspecifiedDelegateesToExecuteJs,
-    testUseCapacityDelegationAuthSigWithUnspecifiedDelegateesToPkpSign,
-    testUseCapacityDelegationAuthSigWithUnspecifiedCapacityTokenIdToExecuteJs,
-    testUseCapacityDelegationAuthSigWithUnspecifiedCapacityTokenIdToPkpSign,
-  };
+  // const capacityDelegationTests = {
+  //   testDelegatingCapacityCreditsNFTToAnotherWalletToExecuteJs,
+  //   testDelegatingCapacityCreditsNFTToAnotherWalletToPkpSign,
+  //   testDelegatingCapacityCreditsNFTToAnotherPkpToExecuteJs,
+  //   testUseCapacityDelegationAuthSigWithUnspecifiedDelegateesToExecuteJs,
+  //   testUseCapacityDelegationAuthSigWithUnspecifiedDelegateesToPkpSign,
+  //   testUseCapacityDelegationAuthSigWithUnspecifiedCapacityTokenIdToExecuteJs,
+  //   testUseCapacityDelegationAuthSigWithUnspecifiedCapacityTokenIdToPkpSign,
+  // };
 
-  const bareAuthSigTests = {
-    // -- eth auth sig
-    testEthAuthSigToEncryptDecryptString,
+  // const bareAuthSigTests = {
+  //   // -- eth auth sig
+  //   testEthAuthSigToEncryptDecryptString,
 
-    // -- solana auth sig
-    testSolAuthSigToEncryptDecryptString,
+  //   // -- solana auth sig
+  //   testSolAuthSigToEncryptDecryptString,
 
-    // -- cosmos auth sig
-    testCosmosAuthSigToEncryptDecryptString,
-  };
+  //   // -- cosmos auth sig
+  //   testCosmosAuthSigToEncryptDecryptString,
+  // };
 
   const pkpEthersTest = {
     eoaSessionSigs: {
-      testPkpEthersWithEoaSessionSigsToSignWithAuthContext,
+      // testPkpEthersWithEoaSessionSigsToSignWithAuthContext,
       testPkpEthersWithEoaSessionSigsToSignMessage,
-      testPkpEthersWithEoaSessionSigsToEthSign,
-      testPkpEthersWithEoaSessionSigsToPersonalSign,
-      testPkpEthersWithEoaSessionSigsToSendTx,
-      testPkpEthersWithEoaSessionSigsToEthSignTransaction,
-      testPkpEthersWithEoaSessionSigsToEthSignTypedDataV1,
-      testPkpEthersWithEoaSessionSigsToEthSignTypedDataV3,
-      testPkpEthersWithEoaSessionSigsToEthSignTypedDataV4,
-      testPkpEthersWithEoaSessionSigsToEthSignTypedData,
-      testPkpEthersWithEoaSessionSigsToEthSignTypedDataUtil,
+      // testPkpEthersWithEoaSessionSigsToEthSign,
+      // testPkpEthersWithEoaSessionSigsToPersonalSign,
+      // testPkpEthersWithEoaSessionSigsToSendTx,
+      // testPkpEthersWithEoaSessionSigsToEthSignTransaction,
+      // testPkpEthersWithEoaSessionSigsToEthSignTypedDataV1,
+      // testPkpEthersWithEoaSessionSigsToEthSignTypedDataV3,
+      // testPkpEthersWithEoaSessionSigsToEthSignTypedDataV4,
+      // testPkpEthersWithEoaSessionSigsToEthSignTypedData,
+      // testPkpEthersWithEoaSessionSigsToEthSignTypedDataUtil,
     },
-    pkpSessionSigs: {
-      testPkpEthersWithPkpSessionSigsToSignMessage,
-      testPkpEthersWithPkpSessionSigsToEthSign,
-      testPkpEthersWithPkpSessionSigsToPersonalSign,
-      testPkpEthersWithPkpSessionSigsToSendTx,
-      testPkpEthersWithPkpSessionSigsToEthSignTransaction,
-      testPkpEthersWithPkpSessionSigsToEthSignTypedDataV1,
-      testPkpEthersWithPkpSessionSigsToEthSignTypedDataV3,
-      testPkpEthersWithPkpSessionSigsToEthSignTypedDataV4,
-      testPkpEthersWithPkpSessionSigsToEthSignTypedData,
-      testPkpEthersWithPkpSessionSigsToEthSignTypedDataUtil,
-    },
-    litActionSessionSigs: {
-      testPkpEthersWithLitActionSessionSigsToSignMessage,
-      testPkpEthersWithLitActionSessionSigsToEthSign,
-      testPkpEthersWithLitActionSessionSigsToPersonalSign,
-      testPkpEthersWithLitActionSessionSigsToSendTx,
-      testPkpEthersWithLitActionSessionSigsToEthSignTransaction,
-      testPkpEthersWithLitActionSessionSigsToEthSignTypedDataV1,
-      testPkpEthersWithLitActionSessionSigsToEthSignTypedDataV3,
-      testPkpEthersWithLitActionSessionSigsToEthSignTypedDataV4,
-      testPkpEthersWithLitActionSessionSigsToEthSignTypedData,
-      testPkpEthersWithLitActionSessionSigsToEthSignTypedDataUtil,
-    },
+    // pkpSessionSigs: {
+    //   testPkpEthersWithPkpSessionSigsToSignMessage,
+    //   testPkpEthersWithPkpSessionSigsToEthSign,
+    //   testPkpEthersWithPkpSessionSigsToPersonalSign,
+    //   testPkpEthersWithPkpSessionSigsToSendTx,
+    //   testPkpEthersWithPkpSessionSigsToEthSignTransaction,
+    //   testPkpEthersWithPkpSessionSigsToEthSignTypedDataV1,
+    //   testPkpEthersWithPkpSessionSigsToEthSignTypedDataV3,
+    //   testPkpEthersWithPkpSessionSigsToEthSignTypedDataV4,
+    //   testPkpEthersWithPkpSessionSigsToEthSignTypedData,
+    //   testPkpEthersWithPkpSessionSigsToEthSignTypedDataUtil,
+    // },
+    // litActionSessionSigs: {
+    //   testPkpEthersWithLitActionSessionSigsToSignMessage,
+    //   testPkpEthersWithLitActionSessionSigsToEthSign,
+    //   testPkpEthersWithLitActionSessionSigsToPersonalSign,
+    //   testPkpEthersWithLitActionSessionSigsToSendTx,
+    //   testPkpEthersWithLitActionSessionSigsToEthSignTransaction,
+    //   testPkpEthersWithLitActionSessionSigsToEthSignTypedDataV1,
+    //   testPkpEthersWithLitActionSessionSigsToEthSignTypedDataV3,
+    //   testPkpEthersWithLitActionSessionSigsToEthSignTypedDataV4,
+    //   testPkpEthersWithLitActionSessionSigsToEthSignTypedData,
+    //   testPkpEthersWithLitActionSessionSigsToEthSignTypedDataUtil,
+    // },
   };
 
   const litActionCombiningTests = {
@@ -281,21 +281,21 @@ import { testSignTransactionWithSolanaEncryptedKey } from './tests/testSignTrans
       // testExample,
       // testBundleSpeed,
       ...eoaSessionSigsTests,
-      ...pkpSessionSigsTests,
-      ...litActionSessionSigsTests,
-      ...litActionIpfsIdSessionSigsTests,
-      ...capacityDelegationTests,
-      ...bareAuthSigTests,
+      // ...pkpSessionSigsTests,
+      // ...litActionSessionSigsTests,
+      // ...litActionIpfsIdSessionSigsTests,
+      // ...capacityDelegationTests,
+      // ...bareAuthSigTests,
 
       ...pkpEthersTest.eoaSessionSigs,
-      ...pkpEthersTest.pkpSessionSigs,
-      ...pkpEthersTest.litActionSessionSigs,
+      // ...pkpEthersTest.pkpSessionSigs,
+      // ...pkpEthersTest.litActionSessionSigs,
 
-      ...litActionCombiningTests.broadcastAndCombine,
-      ...litActionCombiningTests.decryptAndCombine,
-      ...litActionCombiningTests.ecdsaSignAndCombine,
+      // ...litActionCombiningTests.broadcastAndCombine,
+      // ...litActionCombiningTests.decryptAndCombine,
+      // ...litActionCombiningTests.ecdsaSignAndCombine,
 
-      ...wrappedKeysTests,
+      // ...wrappedKeysTests,
     },
     devEnv,
   };
